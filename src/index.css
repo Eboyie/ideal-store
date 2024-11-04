@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-elements {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
+a.active hr {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  a.active {
+    background-color: #d8d3d3d3;
+    color: #222222;
+  }
+}
+
+.bg-image {
+  background-image: url('./assets/image/bg_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bg-image2 {
+  background-image: url('./assets/image/hero_img2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.max-min::placeholder {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .max-min::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
